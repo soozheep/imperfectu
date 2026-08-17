@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperfectu — Sonic Remedy | Soozhee</title>
+  <meta name="description" content="Imperfectu by Soozhee. Sonic Remedy : Audiosensory Resonance. Alien Frequencies." />
+  <meta property="og:title" content="Imperfectu — Sonic Remedy | Soozhee" />
+  <meta property="og:description" content="Imperfectu by Soozhee. Sonic Remedy : Audiosensory Resonance | Alien Frequencies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://imperfectu.vercel.app" />
+  <meta property="og:image" content="assets/im-cover.PNG" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header>
+    <div class="container nav">
+      <a href="https://sonicremedy01.vercel.app" class="logo">
+        <span class="logo-mark">SR</span>
+        <div class="logo-text">
+          <span class="logo-title">Sonic Remedy</span>
+          <span class="logo-sub">Audiosensory Resonance</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#listen">Listen</a>
+        <a href="#lyrics">Lyrics</a>
+        <a href="#about">Explore the Song</a>
+        <a href="#stream">Stream</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#listen" onclick="closeMobileMenu()">Listen</a>
+      <a href="#lyrics" onclick="closeMobileMenu()">Lyrics</a>
+      <a href="#about" onclick="closeMobileMenu()">Explore the Song</a>
+      <a href="#stream" onclick="closeMobileMenu()">Stream</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="listen">
+      <div class="container hero-grid">
+        <div class="hero-art">
+          <img src="assets/im-cover.PNG" alt="Imperfectu cover art by Soozhee" class="cover-img" />
+        </div>
+        <div class="hero-content">
+          <div class="badge">Sonic Remedy · Audiosensory Resonance</div>
+          <h1>Imperfectu – Remedy 05 – No.88 Alien Frequencies</h1>
+          <p class="artist">Soozhee</p>
+          <p class="tagline">Imperfectu.<br>Alien Frequencies.</p>
+
+          <div class="player-wrap">
+            <audio id="audio" src="assets/05_Imperfectu.mp3" preload="metadata"></audio>
+            <div class="player">
+              <button class="play-btn" id="playBtn" aria-label="Play">
+                <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+              <div class="player-meta">
+                <div class="track-title">Imperfectu</div>
+                <div class="progress-wrap">
+                  <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                  </div>
+                  <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stream-links" id="stream">
+            <a class="stream-btn" href="#" target="_blank" rel="noopener">Spotify</a>
+            <a class="stream-btn" href="#" target="_blank" rel="noopener">Apple Music</a>
+            <a class="stream-btn" href="#" target="_blank" rel="noopener">Amazon Music</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lyrics">
+      <div class="container">
+        <h2 class="section-title">Lyric Cards</h2>
+        <p class="section-sub">Shareable lyric frames in order. Tap any card to open full size. One-click share to socials.</p>
+        <div class="grid lyrics-grid">
+
+          <article class="card" data-title="Imperfectu — 01/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-01.png">
+            <div class="card-img-wrap"><span class="card-num">01</span><a href="assets/lyrics/im-01.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-01.png" alt="Lyric card 01" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-01.png" href="assets/lyrics/im-01.png">Download</a></div></div>
+          </article>
+
+          <article class="card" data-title="Imperfectu — 02/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-02.png">
+            <div class="card-img-wrap"><span class="card-num">02</span><a href="assets/lyrics/im-02.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-02.png" alt="Lyric card 02" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-02.png" href="assets/lyrics/im-02.png">Download</a></div></div>
+          </article>
+
+          <article class="card" data-title="Imperfectu — 03/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-03.png">
+            <div class="card-img-wrap"><span class="card-num">03</span><a href="assets/lyrics/im-03.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-03.png" alt="Lyric card 03" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-03.png" href="assets/lyrics/im-03.png">Download</a></div></div>
+          </article>
+
+          <article class="card" data-title="Imperfectu — 04/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-04.png">
+            <div class="card-img-wrap"><span class="card-num">04</span><a href="assets/lyrics/im-04.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-04.png" alt="Lyric card 04" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-04.png" href="assets/lyrics/im-04.png">Download</a></div></div>
+          </article>
+
+          <article class="card" data-title="Imperfectu — 05/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-05.png">
+            <div class="card-img-wrap"><span class="card-num">05</span><a href="assets/lyrics/im-05.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-05.png" alt="Lyric card 05" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-05.png" href="assets/lyrics/im-05.png">Download</a></div></div>
+          </article>
+
+          <article class="card" data-title="Imperfectu — 06/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-06.png">
+            <div class="card-img-wrap"><span class="card-num">06</span><a href="assets/lyrics/im-06.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-06.png" alt="Lyric card 06" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-06.png" href="assets/lyrics/im-06.png">Download</a></div></div>
+          </article>
+
+          <article class="card" data-title="Imperfectu — 07/7" data-text="Imperfectu by Soozhee | imperfectu.vercel.app" data-img="assets/lyrics/im-07.png">
+            <div class="card-img-wrap"><span class="card-num">07</span><a href="assets/lyrics/im-07.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/im-07.png" alt="Lyric card 07" loading="lazy" /></a></div>
+            <div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-07.png" href="assets/lyrics/im-07.png">Download</a></div></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">Explore the Song</h2>
+        <p class="section-sub">Explore the patterns, questions, and possibilities within Imperfectu.</p>
+        <div class="grid about-grid">
+
+          <article class="card card-wide" data-title="The Pattern — Imperfectu" data-text="Imperfectu by Soozhee. — imperfectu.vercel.app" data-img="assets/cards/im-card-01.png">
+            <div class="card-img-wrap"><span class="card-num">01 / 04</span><a href="assets/cards/im-card-01.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/im-card-01.png" alt="The Pattern" loading="lazy" /></a></div>
+            <div class="card-body"><h3>The Pattern</h3><p>The beauty in the unfinished.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-card-01.png" href="assets/cards/im-card-01.png">Download</a></div></div>
+          </article>
+
+          <article class="card card-wide" data-title="The Mechanism — Imperfectu" data-text="Imperfectu by Soozhee. — imperfectu.vercel.app" data-img="assets/cards/im-card-02.png">
+            <div class="card-img-wrap"><span class="card-num">02 / 04</span><a href="assets/cards/im-card-02.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/im-card-02.png" alt="The Mechanism" loading="lazy" /></a></div>
+            <div class="card-body"><h3>The Mechanism</h3><p>What the cracks let through.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-card-02.png" href="assets/cards/im-card-02.png">Download</a></div></div>
+          </article>
+
+          <article class="card card-wide" data-title="The Opening — Imperfectu" data-text="Imperfectu by Soozhee. — imperfectu.vercel.app" data-img="assets/cards/im-card-03.png">
+            <div class="card-img-wrap"><span class="card-num">03 / 04</span><a href="assets/cards/im-card-03.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/im-card-03.png" alt="The Opening" loading="lazy" /></a></div>
+            <div class="card-body"><h3>The Opening</h3><p>When imperfect becomes the signal.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-card-03.png" href="assets/cards/im-card-03.png">Download</a></div></div>
+          </article>
+
+          <article class="card card-wide" data-title="Listen Like a Remedy — Imperfectu" data-text="Imperfectu by Soozhee. — imperfectu.vercel.app" data-img="assets/cards/im-card-04.png">
+            <div class="card-img-wrap"><span class="card-num">04 / 04</span><a href="assets/cards/im-card-04.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/im-card-04.png" alt="Listen Like a Remedy" loading="lazy" /></a></div>
+            <div class="card-body"><h3>Listen Like a Remedy</h3><p>What if the flaw is the frequency?</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="im-card-04.png" href="assets/cards/im-card-04.png">Download</a></div></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Imperfectu.</h2>
+        <p>Alien Frequencies.</p>
+        <div class="share-bar" style="justify-content:center;">
+          <button class="share-btn primary" onclick="sharePage()">Share this page</button>
+          <button class="share-btn" onclick="copyPageLink()">Copy link</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-brand">Sonic Remedy : Audiosensory Resonance</p>
+      <p>Imperfectu · Vocals, lyrics & composed by Soozhee · Produced by Caelverum Music</p>
+      <p class="fineprint">© Soozhee and Caelverum Music. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <img id="lightboxImg" src="" alt="Full size card" />
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
